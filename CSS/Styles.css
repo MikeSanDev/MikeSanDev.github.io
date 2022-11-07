@@ -95,7 +95,7 @@ header {
   top: 0;
   left: 0;
   background-color: var(--secondary);
-  padding: 0.1rem 4rem;
+  padding: 0.5rem 3rem;
 }
 .logo {
   width: 50px;
@@ -122,57 +122,12 @@ font-size: 17px;
   color: var(--primary);
 
 }
-/* #toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  background-color: #dbe2ef;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-/* #toggle::before {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 2px;
-  background: #3f72af;
-  transform: translateY(-5px);
-  transition: 0.2s;
-}
-#toggle::after {
-  content: "";
-  position: absolute;
-  width: 28px;
-  height: 2px;
-  background: #3f72af;
-  transform: translateY(5px);
-  transition: 0.2s;
-}
-#toggle.active::before {
-  transform: translateY(0) rotate(45deg);
-}
-#toggle.active::after {
-  transform: translateY(0) rotate(-45deg);
-} */
-/* #toggle.active {
-  background: #dbe2ef;
-} */
 #navbar {
-
   text-align: end;
   height: 60;
   right: 60px;
-  /* background: #dbe2ef; */
-  /* transition: 0.5s; */
-  /* overflow: hidden; */
 }
-/* #navbar.active {
-  width: 600px;
-  position: fixed;
-} */
+
 #navbar ul {
   position: relative;
   display: flex;
@@ -196,29 +151,7 @@ font-size: 17px;
   /* background: #dbe2ef; */
 }
 
-/* RESPONSIVE */
-@media (max-width: 990px) {
-  #navbar {
-    position: fixed;
-    bottom: -100%;
-    right: 0;
-    width: 100%;
-    transition: 0.5s;
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  #navbar.active {
-    height: calc(100vh - 60px);
-    bottom: 0;
-    width: 100%;
-  }
-  #navbar ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
+
 
 /***************** HOME ******************** */
 .home-container {
@@ -368,7 +301,7 @@ font-size: 17px;
 }
 .profile {
   width: 70%;
-  margin-right: 60px;
+  margin-left: 60px;
 }
 
 #about h2 {
@@ -410,7 +343,7 @@ font-size: 17px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: 45px;
+  margin-right: 45px;
 }
 .skill_icon {
   display: flex;
@@ -585,3 +518,63 @@ background:rgb(93, 139, 255);
   color: #ffffff;
   text-shadow: 4px 3px 0px #7a7a7a;
 }
+
+/***************** RESPONSIVE ******************** */
+
+@media (min-width: 200px) and (max-width: 768px) {
+  h1 {
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+  }
+  #navbar {
+  display: none;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    width:100%;
+  }
+  .about-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  } 
+  .projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+  .home-container {
+    margin-bottom: 70px;
+    align-items: center;
+    width: 100%;
+  }
+  .profile {
+    margin-left:0;
+    text-align: center;
+  }
+  .skills__container {
+    margin-right: 0;;
+  } 
+  .slider {
+    width: 90%;
+  }
+    .project__box {
+    width:90%;
+    height: auto;
+  }
+  .projects__description {
+    font-size: 20px;
+  } 
+  #footer {
+    font-size: 20px;
+  }
+}
+
+
+
+
