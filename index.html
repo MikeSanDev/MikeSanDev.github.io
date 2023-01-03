@@ -56,11 +56,16 @@
     <div class="profile">
       <h2>Get To Know Me!</h2>
       <p class="intro">
-         I am a full stack developer with a passion for creating fully functional websites and applications and a background in Dentistry.
+        I am a full stack developer with a passion for creating fully functional websites and applications. I have a
+        background in Dentistry as a Dental Hygienist for 4 years where I saw 6-8 patients a day, teaching oral hygiene
+        and doing routine cleanings.
       </p>
-      <p class="intro">I decided to pursue Software Engineering where I can express my creativity and consistently learn to better myself. After finishing a Coding Bootcamp with Coding Dojo to further my knowledge, I have continued building several full stack projects including partnering with a sneaker startup called Kinetic Footwear. Let me know if you need any chargeable sneakers!
+      <p class="intro">I decided to pursue Software Engineering where I can be more creative and consistently learn to
+        better myself. Recently, I finished a Coding Bootcamp with Coding Dojo which helped to further my knowledge and
+        understanding of programming.
       </p>
-      <p class="intro">On my days off I like to be active, whether it is lifting, running, or dancing. I am a freestyle dancer, I typically train with my freestyle crew and we compete in dance battles around Chicago.
+      <p class="intro">On my days off I like to be active, whether it is lifting, running, or dancing. I
+        typically train with my freestyle crew as we compete at dance battles around Chicago.
       </p>
 
     </div>
@@ -101,7 +106,7 @@
     <h2>Projects</h2>
     <!-- Project Carousel -->
     <!--Slider-->
-    <div id="slider">
+    <!-- <div id="slider">
       <div class="slide">
         <img src="/Images/kinetic_SS.png">
       </div>
@@ -113,61 +118,75 @@
       <div class="slide">
         <img src="/Images/WhiteEle_SS.png">
       </div>
+ -->
 
 
-      <!--Controlling arrows-->
-      <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class='bx bxs-chevrons-left bx-flashing'
+    <!--Controlling arrows-->
+    <!-- <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class='bx bxs-chevrons-left bx-flashing'
           style='color:#ffffff'></i>
       </span>
       <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class='bx bxs-chevrons-right bx-flashing'
           style='color:#ffffff'></i>
       </span>
-    </div>
+    </div> -->
     <!-- keep dots here -->
-    <div id="dots-con">
+    <!-- <div id="dots-con">
       <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-    </div>
+    </div> -->
   </section>
   <section id="projects">
     <!-- Project Cards -->
     <div class="projects-container">
       <div class="project__box">
+        <img class="project__img" src="/Images/kinetic/shop.gif" alt="Kinetic" />
         <div class="project__items">
-          <img class="project__img" src="/Images/kinetic/shop.gif" alt="Kinetic" style="width: 100%" />
-          <h3>Kinetic Footwear</h3>
-          <h4 class="projects__description">Built with: Python | Flask | MySQL | HTML | CSS | Javascript </h4>
+          <h3 class="project_title">Kinetic Footwear</h3>
+          <h4 class="projects__built">Built with: Python | Flask | MySQL | HTML | CSS | Javascript </h4>
           <p class="projects__description">
             Built an e-commerce site for a startup company that sells a usb/charge-able sneaker with every step</p>
           <a href="https://github.com/MikeSanDev/Kinetic" target="_blank" rel="noopener noreferrer"><i
-              class="bx bxl-github bx-lg"></i></a>
+              class="bx bxl-github bx-lg proj_icon"></i></a>
         </div>
       </div>
       <div class="project__box">
+        <img class="project__img" src="/Images/stripe.gif" alt="Spotify" />
         <div class="project__items">
-          <img class="project__img" src="/Images/White_Elephant/created.gif" alt="White-Elephant" style="width: 100%" />
-          <h3>White Elephant</h3>
-          <h4 class="projects__description">Built with: Java | Spring Boot | Spring Security | JSTL | Bootstrap | Bcrypt
+          <h3 class="project_title">Chamber.IO</h3>
+          <h4 class="projects__built">Built with: React | Stripe API | Bootstrap |
+          </h4>
+          <p class="projects__description">
+            An e-commerce site that allows customers to purchase tickets for an in-person dance training session.
+            Implemented Stripe payment gateway to help the client track purchases and tickets.
+          </p>
+          <a href="https://github.com/MikeSanDev/Chamber" target="_blank" rel="noopener noreferrer"><i
+              class="bx bxl-github bx-lg proj_icon"></i></a>
+        </div>
+      </div>
+      <div class="project__box">
+        <img class="project__img" src="/Images/White_Elephant/created.gif" alt="White-Elephant" />
+        <div class="project__items">
+          <h3 class="project_title">White Elephant</h3>
+          <h4 class="projects__built">Built with: Java | Spring Boot | Spring Security | JSTL | Bootstrap | Bcrypt
           </h4>
           <p class="projects__description">Developed a functional CRUD application where users can create gift ideas for
             their friends. </p>
           <a href="https://github.com/MikeSanDev/White-Elephant" target="_blank" rel="noopener noreferrer"><i
-              class="bx bxl-github bx-lg"></i></a>
+              class="bx bxl-github bx-lg proj_icon"></i></a>
         </div>
       </div>
       <div class="project__box">
+        <img class="project__img" src="/Images/spotify/dash_spotify.gif" alt="Spotify" />
         <div class="project__items">
-          <img class="project__img" src="/Images/spotify/dash_spotify.gif" alt="Spotify" style="width: 100%" />
-          <h3>Spotify Clone</h3>
-          <h4 class="projects__description">Built with: React | Node.js | Material.UI | Context API | Spotify API
+          <h3 class="project_title">Spotify Clone</h3>
+          <h4 class="projects__built">Built with: React | Node.js | Material.UI | Context API | Spotify API
           </h4>
           <p class="projects__description">
             A real-time spotify clone, with user authentication, responsive design and use of APIs
           </p>
           <a href="https://github.com/MikeSanDev/Spotify-Clone" target="_blank" rel="noopener noreferrer"><i
-              class="bx bxl-github bx-lg"></i></a>
+              class="bx bxl-github bx-lg proj_icon"></i></a>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -178,7 +197,7 @@
       <table>
         <tr>
           <th>
-            <a class="footer-link" href="mailto:mjs070594@gmail.com" target="_blank" rel="noopener noreferrer"><i
+            <a class="footer-link" href="mailto:mike.san.dev16@gmail.com" target="_blank" rel="noopener noreferrer"><i
                 class="bx bxs-envelope bx-lg"></i></a>
           </th>
           <th>
@@ -260,29 +279,7 @@
     }
 
   </script>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyB1GR8WEHW_9_tlzYuqO8jhykg9uSdACO4",
-      authDomain: "portfolio-2aa33.firebaseapp.com",
-      projectId: "portfolio-2aa33",
-      storageBucket: "portfolio-2aa33.appspot.com",
-      messagingSenderId: "93433344938",
-      appId: "1:93433344938:web:e7032ef0028a93df9731d3",
-      measurementId: "G-109QVEHKFT"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script>
   <script src="https://kit.fontawesome.com/86d675eda9.js" crossorigin="anonymous"></script>
 </body>
 
