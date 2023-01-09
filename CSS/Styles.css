@@ -544,6 +544,10 @@ img {
   padding: 20px 20px;
 
 }
+.globe_icon {
+  font-size: 40px;
+}
+
 
 .projects__built {
   color: #12334e;
